@@ -1,0 +1,3 @@
+'''Timeit Module'''
+ import timeit
+ 
