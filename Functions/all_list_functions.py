@@ -64,6 +64,11 @@ print('\n Creating strings from lists\n')
 
 word = ''.join(list1)
 #the prefix of join specifies the separator between the elements of the list
+#only works if the elements in list1 are string (str) types
+#if there are any integers in the list1
+
+word_1= ''.join([str(element) for element in list1])
+#Beware we still cannot use join if there are tuples or lists inside list1
 print(word)
 
 '''6. Printing a comma separated list in one line of code'''
@@ -88,6 +93,7 @@ print(list7 * 2)
 
 If we want to multiply each element numerically by 2,
 use a combination of lambdas and mapping
+or use list comprehension
 '''
 
 '''9. Slicing'''
